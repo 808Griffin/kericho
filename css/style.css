@@ -1,0 +1,144 @@
+/*logo*/
+.site-branding a{
+    display: inline-flex;
+    height:10vh;
+    margin:8px;
+    padding:6px;
+}
+.logo a{
+    margin-right: 8px;
+}
+
+.icon{
+    margin-right:6px;
+
+}
+.header-green{
+    background-color: #59d420;
+}
+.menu-item{
+  color:#fff;
+}
+
+/*--------------------------------------------------------------
+# Top Bar
+--------------------------------------------------------------*/
+#topbar {
+    padding: 0;
+    font-size: 15px;
+    height: 30px;
+    transition: all 0.5s;
+    background: #2bb80b;
+    color: rgba(255, 255, 255, 0.7);
+  }
+@media only screen and (max-width: 768px) {
+  .md-hidden{
+    display:none;
+  }
+  .menu-item{
+    color:#2b2b2b;
+  }
+}
+ 
+  #topbar.topbar-scrolled {
+    top: -50px;
+  }
+  
+  #topbar i {
+    color: #000;
+  }
+  
+  #topbar i + i {
+    margin-left: 5px;
+  }
+
+  /*carousel*/
+  .carousel-fade .carousel-inner .item {
+    opacity: 0;
+    transition-property: opacity;
+  }
+  
+  .carousel-fade .carousel-inner .active {
+    opacity: 1;
+  }
+  
+  .carousel-fade .carousel-inner .active.left,
+  .carousel-fade .carousel-inner .active.right {
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+  }
+  
+  .carousel-fade .carousel-inner .next.left,
+  .carousel-fade .carousel-inner .prev.right {
+    opacity: 1;
+  }
+  
+  .carousel-fade .carousel-control {
+    z-index: 2;
+  } 
+  @media all and (transform-3d), (-webkit-transform-3d) {
+      .carousel-fade .carousel-inner > .item.next,
+      .carousel-fade .carousel-inner > .item.active.right {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+      }
+      .carousel-fade .carousel-inner > .item.prev,
+      .carousel-fade .carousel-inner > .item.active.left {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+      }
+      .carousel-fade .carousel-inner > .item.next.left,
+      .carousel-fade .carousel-inner > .item.prev.right,
+      .carousel-fade .carousel-inner > .item.active {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+      }
+  } 
+  .carousel-caption {
+    text-shadow: 0 1px 4px rgba(0,0,0,.9);
+    font-size:17px
+    
+  }
+  .carousel-caption h3 {
+    font-size: 30px;
+    font-family: 'Lato', sans-serif;
+    text-align: start;
+  }
+  .btn-read{
+    text-align: start;
+    margin: auto;
+  }
+  .carousel-caption p{
+    text-align: start;
+  }
+      .carousel,
+      .carousel-inner,
+      .carousel-inner .item {
+          padding-top: 4px;
+        height: 70vh;
+       
+      } 
+      .item:nth-child(1) {
+        background: url('../assets/img/tea-00.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+      }
+  
+      .item:nth-child(2) {
+        background: url('../assets/img/tea-leaves.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+      }
+  
+      .item:nth-child(3) {
+        background: url('../assets/img/raw.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+      }
